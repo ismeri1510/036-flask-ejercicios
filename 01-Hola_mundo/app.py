@@ -1,3 +1,4 @@
+"""Primera aplicación Flask: muestra un saludo en la ruta principal."""
 from flask import Flask #importamos la clase flsk
 
 #creamos la app
@@ -8,6 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicio():
+    """Muestra un mensaje de saludo en la página principal."""
     return "Hola, mundo soy Ismeri, esta es mi primer app con Flask jajaja."
 
 #Ejecutamos la aplicacion solamente cuando abrimos el archivo directamente
