@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Archivo estático</title>
+
+    <!-- Con url_for enlazamos el archivo CSS de la carpeta static -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='estilos.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="contenido">
+      <h1>Mi página con estilos</h1>
+
+      <p>Esta pagina tiene colores porque hay un .css en el static.</p>
+
+      <button>Ver mas</button>
+    </div>
+  </body>
+</html>
